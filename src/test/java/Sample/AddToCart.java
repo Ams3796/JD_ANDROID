@@ -13,8 +13,8 @@ import com.genericLib.DriverUtils;
 import com.genericLib.ReadData_PropertyFile;
 import com.objectRepo.SearchProductPage;
 
-public class SearchProduct extends BaseClass {
-
+public class AddToCart extends BaseClass {
+	
 	DriverUtils utils = new DriverUtils();
 	ReadData_PropertyFile prop = new ReadData_PropertyFile();
 	SearchProductPage spp;
@@ -46,10 +46,17 @@ public class SearchProduct extends BaseClass {
 			System.out.println("Product " + i + " : " + prod_name.getText());
 		}
 		spp.getPlp().click();
-		// spp.searchProduct_Shopping();
 		String prod_name = spp.getPdp_prod_name().getText();
 		System.out.println("Product name : " + prod_name);
-		spp.getBuynow_button().click();
+		spp.getAdd_to_cart_button().click();
+		String cart_icon = spp.getCart_icon_count().getText();
+		System.out.println("Cart Count : "+cart_icon);
+		spp.getCart_icon_count().click();
+		String prod_name1=spp.getProdname_in_cart().getText();
+		Assert.assertEquals(prod_name, prod_name1);
+		String amount = spp.getTotal_amount().getText();
+		System.out.println("Total Amount is : "+amount);
+		spp.getPlace_order_button().click();
 		spp.getSelect_this_address().click();
 		String address = spp.getLocation_address().getText();
 		System.out.println("Address : " + address);
@@ -57,7 +64,8 @@ public class SearchProduct extends BaseClass {
 		spp.getProceed_for_payment().click();
 		boolean jdpay_display = spp.getJd_pay().isDisplayed();
 		System.out.println("Pay displayed is : " + jdpay_display);
+		
+		
 
-	}
-
+}
 }

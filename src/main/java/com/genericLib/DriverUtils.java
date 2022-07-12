@@ -16,8 +16,6 @@ import io.appium.java_client.touch.offset.PointOption;
 public class DriverUtils {
 
 	Dimension dimension;
-	
-	
 
 	public void implicitwait(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(AutoConstant.implicitwait, TimeUnit.SECONDS);
@@ -85,7 +83,7 @@ public class DriverUtils {
 						+ text + "\").instance(0))");
 	}
 
-	public  void hidekeyboard(AndroidDriver<WebElement> driver) {
+	public void hidekeyboard(AndroidDriver<WebElement> driver) {
 		driver.hideKeyboard();
 	}
 

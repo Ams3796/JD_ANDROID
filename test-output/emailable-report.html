@@ -9,17 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,951</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,198</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Sample.SearchProduct</td><td><a href="#m0">searchProduct</a></td><td rowspan="1">1657520415296</td><td rowspan="1">103</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Sample.SearchProduct</td><td><a href="#m0">searchProduct</a></td><td rowspan="1">1657561669221</td><td rowspan="1">95</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">Sample.SearchProduct#searchProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StackOverflowError
-	at java.base/java.util.stream.AbstractPipeline.&lt;init&gt;(AbstractPipeline.java:211)
-	at java.base/java.util.stream.ReferencePipeline.&lt;init&gt;(ReferencePipeline.java:96)
-	at java.base/java.util.stream.ReferencePipeline$StatelessOp.&lt;init&gt;(ReferencePipeline.java:800)
-	at java.base/java.util.stream.ReferencePipeline$3.&lt;init&gt;(ReferencePipeline.java:191)
-	at java.base/java.util.stream.ReferencePipeline.map(ReferencePipeline.java:190)
-	at java.base/java.lang.Class.methodToString(Class.java:3696)
+	at java.base/java.util.stream.StreamSupport.stream(StreamSupport.java:70)
+	at java.base/java.util.Arrays.stream(Arrays.java:5447)
+	at java.base/java.util.Arrays.stream(Arrays.java:5428)
+	at java.base/java.lang.Class.methodToString(Class.java:3695)
 	at java.base/java.lang.Class.getConstructor0(Class.java:3617)
 	at java.base/java.lang.Class.getConstructor(Class.java:2303)
 	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)
@@ -1038,6 +1036,8 @@
 	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
 	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
 	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

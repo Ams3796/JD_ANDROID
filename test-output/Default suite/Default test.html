@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 11 11:50:03 IST 2022</td>
+<td>Started on:</td><td>Mon Jul 11 23:17:39 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12951 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10198 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,12 +77,10 @@ function toggleAllBoxes() {
 <tr>
 <td title='Sample.SearchProduct.searchProduct()'><b>searchProduct</b><br>Test class: Sample.SearchProduct</td>
 <td><div><pre>java.lang.StackOverflowError
-	at java.base/java.util.stream.AbstractPipeline.&lt;init&gt;(AbstractPipeline.java:211)
-	at java.base/java.util.stream.ReferencePipeline.&lt;init&gt;(ReferencePipeline.java:96)
-	at java.base/java.util.stream.ReferencePipeline$StatelessOp.&lt;init&gt;(ReferencePipeline.java:800)
-	at java.base/java.util.stream.ReferencePipeline$3.&lt;init&gt;(ReferencePipeline.java:191)
-	at java.base/java.util.stream.ReferencePipeline.map(ReferencePipeline.java:190)
-	at java.base/java.lang.Class.methodToString(Class.java:3696)
+	at java.base/java.util.stream.StreamSupport.stream(StreamSupport.java:70)
+	at java.base/java.util.Arrays.stream(Arrays.java:5447)
+	at java.base/java.util.Arrays.stream(Arrays.java:5428)
+	at java.base/java.lang.Class.methodToString(Class.java:3695)
 	at java.base/java.lang.Class.getConstructor0(Class.java:3617)
 	at java.base/java.lang.Class.getConstructor(Class.java:2303)
 	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)
@@ -1101,14 +1099,14 @@ function toggleAllBoxes() {
 	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
 	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
 	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
 </pre></div><a href='#' onClick='toggleBox("stack-trace2103569615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace2103569615'><pre>java.lang.StackOverflowError
-	at java.base/java.util.stream.AbstractPipeline.&lt;init&gt;(AbstractPipeline.java:211)
-	at java.base/java.util.stream.ReferencePipeline.&lt;init&gt;(ReferencePipeline.java:96)
-	at java.base/java.util.stream.ReferencePipeline$StatelessOp.&lt;init&gt;(ReferencePipeline.java:800)
-	at java.base/java.util.stream.ReferencePipeline$3.&lt;init&gt;(ReferencePipeline.java:191)
-	at java.base/java.util.stream.ReferencePipeline.map(ReferencePipeline.java:190)
-	at java.base/java.lang.Class.methodToString(Class.java:3696)
+	at java.base/java.util.stream.StreamSupport.stream(StreamSupport.java:70)
+	at java.base/java.util.Arrays.stream(Arrays.java:5447)
+	at java.base/java.util.Arrays.stream(Arrays.java:5428)
+	at java.base/java.lang.Class.methodToString(Class.java:3695)
 	at java.base/java.lang.Class.getConstructor0(Class.java:3617)
 	at java.base/java.lang.Class.getConstructor(Class.java:2303)
 	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)
@@ -2127,6 +2125,8 @@ function toggleAllBoxes() {
 	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
 	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
 	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:131)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:64)
 </pre></div></td>
 <td>0</td>
 <td>Sample.SearchProduct@2f217633</td></tr>

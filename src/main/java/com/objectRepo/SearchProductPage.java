@@ -76,6 +76,20 @@ public class SearchProductPage {
 	public WebElement getBuynow_button() {
 		return buynow_button;
 	}
+	
+	@FindBy(id="com.justdial.search:id/tvAddToCartBtn")
+	private WebElement add_to_cart_button;
+	
+	public WebElement getAdd_to_cart_button() {
+		return add_to_cart_button;
+	}
+	
+	@FindBy(id="com.justdial.search:id/textcountcarttext")
+	private WebElement cart_icon_count;
+	
+	public WebElement getCart_icon_count() {
+		return cart_icon_count;
+	}
 
 //	@FindBy(id="com.justdial.search:id/add_address_text_view")
 //	private WebElement add_new_address_button;
@@ -84,6 +98,29 @@ public class SearchProductPage {
 //	public WebElement getAdd_new_address_button() {
 //		return add_new_address_button;
 //	}
+
+	
+    @FindBy(id="com.justdial.search:id/mod_list_model")
+    private WebElement prodname_in_cart;
+	
+
+	public WebElement getProdname_in_cart() {
+		return prodname_in_cart;
+	}
+	
+	@FindBy(id="com.justdial.search:id/totalamounttext")
+	private WebElement total_amount;
+
+	public WebElement getTotal_amount() {
+		return total_amount;
+	}
+	
+	@FindBy(id="com.justdial.search:id/txt_place_order")
+	private WebElement place_order_button;
+
+	public WebElement getPlace_order_button() {
+		return place_order_button;
+	}
 
 	@FindBy(xpath = "//android.widget.TextView[@text='SELECT THIS']")
 	private WebElement select_this_address;
