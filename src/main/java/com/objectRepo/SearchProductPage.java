@@ -17,9 +17,6 @@ public class SearchProductPage {
 	ReadData_PropertyFile prop = new ReadData_PropertyFile();
 	DriverUtils utils = new DriverUtils();
 
-	public SearchProductPage() {
-		PageFactory.initElements(driver, SearchProductPage.class);
-	}
 
 	@FindBy(xpath = "//android.widget.TextView[@text='SHOPPING']")
 	private WebElement shopping_button;
