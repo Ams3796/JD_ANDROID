@@ -3,10 +3,13 @@ package com.genericLib;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -81,6 +84,12 @@ public class DriverUtils {
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).new UiSelector().textContains(\""
 						+ text + "\").instance(0))");
+	}
+	
+	public void scroll(AndroidDriver<WebElement> driver, WebElement element)
+	{
+		driver.findElementByAndroidUIAutomator("new UiScrollable("+"new UiSelectore().scrollable(true)).scrollIntoView("+"new UiSelector().textContains(\"+element+\"))"); 
+
 	}
 
 	public void hidekeyboard(AndroidDriver<WebElement> driver) {

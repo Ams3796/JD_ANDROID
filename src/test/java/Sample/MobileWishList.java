@@ -7,7 +7,8 @@ import org.testng.annotations.Test;
 import com.genericLib.BaseClass;
 import com.genericLib.DriverUtils;
 import com.genericLib.ReadData_PropertyFile;
-import com.objectRepo.MobileWishListPage;
+import com.objectRepo.HomePage;
+import com.objectRepo.MobilePage;
 import com.objectRepo.SearchProductPage;
 
 public class MobileWishList extends BaseClass {
@@ -15,15 +16,17 @@ public class MobileWishList extends BaseClass {
 	DriverUtils utils = new DriverUtils();
 	ReadData_PropertyFile prop = new ReadData_PropertyFile();
 	SearchProductPage sp;
-	MobileWishListPage mob;
+	MobilePage mob;
+	HomePage hp;
 
 	@Test
 
 	public void wishlist() {
 		sp = PageFactory.initElements(driver, SearchProductPage.class);
-		mob = PageFactory.initElements(driver, MobileWishListPage.class);
+		mob = PageFactory.initElements(driver, MobilePage.class);
+		hp = PageFactory.initElements(driver, HomePage.class);
 
-		mob.getPromo_banner_image().click();
+		hp.getPromo_banner_image().click();
 		mob.getMobile_option().click();
 		mob.getApple_mobiles_option().click();
 		mob.getFirst_result().click();
