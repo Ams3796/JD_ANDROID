@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-25T15:39:58 IST" name="Default suite" finished-at="2022-07-25T15:52:30 IST" duration-ms="751497">
+  <suite started-at="2022-07-27T16:15:43 IST" name="Default suite" finished-at="2022-07-27T16:19:26 IST" duration-ms="223122">
     <groups>
     </groups>
-    <test started-at="2022-07-25T15:39:58 IST" name="Default test" finished-at="2022-07-25T15:52:30 IST" duration-ms="751497">
-      <class name="Sample.MobileWishList">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Sample.MobileWishList@2f217633]" started-at="2022-07-25T15:39:58 IST" name="setUp" finished-at="2022-07-25T15:40:09 IST" duration-ms="10505" status="PASS">
+    <test started-at="2022-07-27T16:15:43 IST" name="Default test" finished-at="2022-07-27T16:19:26 IST" duration-ms="223122">
+      <class name="Sample.CompareOption">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Sample.CompareOption@2f217633]" started-at="2022-07-27T16:15:43 IST" name="setUp" finished-at="2022-07-27T16:15:53 IST" duration-ms="9983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Sample.MobileWishList@2f217633]" started-at="2022-07-25T15:40:09 IST" name="beforeMethod" finished-at="2022-07-25T15:40:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:Sample.CompareOption@2f217633]" started-at="2022-07-27T16:15:53 IST" name="beforeMethod" finished-at="2022-07-27T16:15:53 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="wishlist()[pri:0, instance:Sample.MobileWishList@2f217633]" started-at="2022-07-25T15:40:09 IST" name="wishlist" finished-at="2022-07-25T15:52:29 IST" duration-ms="740386" status="PASS">
+        <test-method signature="compare()[pri:0, instance:Sample.CompareOption@2f217633]" started-at="2022-07-27T16:15:53 IST" name="compare" finished-at="2022-07-27T16:19:25 IST" duration-ms="212419" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wishlist -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Sample.MobileWishList@2f217633]" started-at="2022-07-25T15:52:29 IST" name="afterMethod" finished-at="2022-07-25T15:52:29 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- compare -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:Sample.CompareOption@2f217633]" started-at="2022-07-27T16:19:25 IST" name="afterMethod" finished-at="2022-07-27T16:19:25 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sample.MobileWishList@2f217633]" started-at="2022-07-25T15:52:29 IST" name="tearDown" finished-at="2022-07-25T15:52:30 IST" duration-ms="581" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sample.CompareOption@2f217633]" started-at="2022-07-27T16:19:25 IST" name="tearDown" finished-at="2022-07-27T16:19:26 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Sample.MobileWishList -->
+      </class> <!-- Sample.CompareOption -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
